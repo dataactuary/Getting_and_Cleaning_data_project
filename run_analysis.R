@@ -18,12 +18,13 @@
 #####################
 
 
-zipUrl   =  "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-zipName  ="getdata_projectfiles_UCI HAR Dataset.zip"
+# This scrpit assumes the Samsung data is available
+#zipUrl   =  "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+#zipName  ="getdata_projectfiles_UCI HAR Dataset.zip"
 
-if (!file.exists(zipName)) {
-    download.file(zipUrl, zipName, mode = "wb")
-}
+#if (!file.exists(zipName)) {
+#    download.file(zipUrl, zipName, mode = "wb")
+#}
 
 # unzip zip file containing data if data directory doesn't already exist
 
@@ -118,7 +119,7 @@ Tidy_mean <- ActivityData %>%
     summarise_each(funs(mean))
 
 # output to file "tidy_mean.txt"
-write.table(Tidy_mean, file.path(Datapath, "tidy_mean.txt"), row.names = FALSE, 
+write.table(Tidy_mean, "tidy_mean.txt", row.names = FALSE, 
             quote = FALSE)
 
 

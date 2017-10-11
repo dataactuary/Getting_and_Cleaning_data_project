@@ -26,6 +26,9 @@ Training and test data were merged together to create one data set, then the mea
 The R script 'run_analysis.R' can be used to create the data set. It retrieves the source data set and transforms it to produce the final data set by implementing the following steps (see the Code book for details, as well as the comments in the script itself):
 
 - Download and unzip source data if it doesn't exist.
+- Create a folder 'UCI HAR Dataset' in your working directory in which the data is placed. 
+
+### 'Run the script run_analysis.R' This script does the following:
 - Read data.
 - Merge the training and the test sets to create one data set.
 - Extract the mean and standard deviation for each measurement.
