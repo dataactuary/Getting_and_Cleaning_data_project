@@ -1,5 +1,19 @@
 # Codebook for 'tidy_mean.txt'
 
+
+## Tranformations
+
+The following steps have been performed to attain a tidy dataset. 
+
+- Read data.
+- Merge the training and the test sets to create one data set.
+- Extract the mean and standard deviation for each measurement.
+- Use descriptive activity names to name the activities in the data set.
+- Appropriately label the data set with descriptive variable names.
+- Create a second, independent tidy set with the average of each variable for each activity and each subject.
+- Write the data set to the 'tidy_mean.txt' file.
+
+
 ## Variables
 
 SubjectId                                                          : int  1 1 1 1 1 1 2 2 2 2 ...
